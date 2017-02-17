@@ -1,0 +1,35 @@
+traps type 4 traps [ "button: [5,1] "trap [2,3], ]
+
+
+
+option optional_fields(json op field)
+cc_dields = []
+for json_field in json_optional_fields:
+    filed_type = json_field["type"]
+    if field_type == cc_data.CCMapTitleField.TYPE #do this for all or you can say if field_type == 3
+        cc_field = cc_data.CCMapTitleField(json_field["title"])
+        cc_fields.append(cc_field)
+    elif trap
+        cc_traps = []
+        for json_trap in json_field["traps"]:
+            bx = json_trap["button"] [0]
+            by 1
+            tx 0
+            ty 1
+    elif machine #CCCloning
+        cc_machines = []
+        for json_machine in json_filed["cloning_machines"]:
+            bx
+            by
+    elif mon
+        cc_monsters = []
+        for json_mon in json_field["monsters"]
+            x=[0]
+            y= json_mon[1]
+            cc_monsters.append(cc_data.CCCoordinate(x,y))
+        cc_field = cc_data.CCMonsterMovementFiled(cc_mons)
+    else:
+        if _debug_:
+            raise AssertionError("unsupported field types" + str(field_type))
+        return none
+    return cc_fields
